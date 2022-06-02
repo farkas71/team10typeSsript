@@ -1,1 +1,3 @@
-document.write("Helló valami");
+document.write("Helló /");
+document.write("valami /");
+document.write("qqqqq / ");
