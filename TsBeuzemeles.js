@@ -11,7 +11,7 @@ logikai = false;
 var barmi = true;
 barmi = 5;
 barmi = "korte";
-document.write("<br>" + szam + barmi);
+document.write(szam + barmi);
 // "ismeretlen" = JOBB MINT A "barmi", inkább unknown-t használjuk, mert már a műveletben hibát jelez, ha két különböző típusú értéket akarunk pl. öszeadni
 var ismeretlen = false;
 ismeretlen = 1;
@@ -20,9 +20,9 @@ ismeretlen = "alma";
 console.log(String(ismeretlen));
 // "tomb" = TÖMBÖK LÉTRHOZÁSA
 var szovegtomb = ["alma", "körte", "barack"];
-var szamtomb = [1, 2, 3, 4, 5, 6, ];
-var barmitomb = ["alma", 5, true, ];
+var szamtomb = [1, 2, 3, 4, 5, 6,];
+var barmitomb = ["alma", 5, true,];
 // "tomb-máshogy" TÖMBÖK LÉTREHOZÁS MÁSHOGY
 var szovegtomb1 = ["alma", "körte", "barack"];
-var szamtomb2 = [1, 2, 3, 4, 5, 6, ];
-var barmitomb3 = ["alma", 5, true, ];
+var szamtomb2 = [1, 2, 3, 4, 5, 6,];
+var barmitomb3 = ["alma", 5, true,];

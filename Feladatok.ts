@@ -1,10 +1,9 @@
-var oldal: number = Math.round(Math.random() * (10 - 1) + 1);
-document.write(
-    `A négyzet kerülete ${oldal} oldallal: ${
-        4 * oldal
-    } <br>A négyzet területe ${oldal} oldallal: ${oldal * oldal}  `
-);
 
+// NÉGYZET KERÜLET/TERÜLET
+var oldal: number = Math.round(Math.random() * (10 - 1) + 1);
+document.write(`A négyzet kerülete ${oldal} oldallal: ${4 * oldal} <br>A négyzet területe ${oldal} oldallal: ${oldal * oldal}`);
+
+// PÁROS-PÁRATLAN SZÁM-E?
 var szam: number = Math.round(Math.random() * 10);
 if (szam % 2 == 0) {
     document.write("<br>" + szam + " Páros <br>");
@@ -12,6 +11,7 @@ if (szam % 2 == 0) {
     document.write("<br>" + szam + " Páratlan <br>");
 }
 
+// PRIM SZÁM-E?
 var osztok: number = 0;
 for (let i = 1; i <= szam; i++) {
     if(szam%i==0){
