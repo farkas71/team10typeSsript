@@ -37,4 +37,15 @@ function HarommalOszthatoSzamok(vizsgaltTomb) {
     }
     return szamok;
 }
-document.write("<br> Hárommal osztható számok mennyisége:" + HarommalOszthatoSzamok([3, 9, 12, 4, 5]));
+document.write("<br> Hárommal osztható számok mennyisége:" +
+    HarommalOszthatoSzamok([3, 9, 12, 4, 5]));
+function nyeroSzamok(darab, min, max) {
+    var szamTomb = [];
+    for (var i = 0; i < darab; i++) {
+        var Szam = Math.round(Math.random() * (max - min) + min);
+        szamTomb.push(Szam);
+    }
+    return szamTomb;
+}
+var vizsgaltTomb = nyeroSzamok(3, 1, 10);
+document.write("<br>A nyerő számok:" + vizsgaltTomb);

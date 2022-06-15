@@ -1,31 +1,25 @@
-
-function Diakinfo(nev:string, csoport:number, tipus:boolean) {
-let info :string = "";
-if(tipus == true){
-    info = nev + " [Team" + csoport + "] - Junior Frontend";
+function Diakinfo(nev: string, csoport: number, tipus: boolean) {
+    let info: string = "";
+    if (tipus == true) {
+        info = nev + " [Team" + csoport + "] - Junior Frontend";
+    } else {
+        info = nev + " [Team" + csoport + "] - Webprogramozó";
+    }
+    return info;
 }
-else{
-    info = nev + " [Team" + csoport + "] - Webprogramozó";
-}
-return info
-}
-var diak = Diakinfo("Farkas Mihály",10,false);
+var diak = Diakinfo("Farkas Mihály", 10, false);
 document.write(diak);
 
 function MagatartasSzorgalom(jegy: number): string {
     if (jegy == 5) {
         return "Példás, Példás";
-    }
-    else if (jegy == 4) {
+    } else if (jegy == 4) {
         return "Jó, Jó";
-    }
-    else if (jegy == 3) {
+    } else if (jegy == 3) {
         return "Változó, Változó";
-    }
-    else if (jegy == 2) {
+    } else if (jegy == 2) {
         return "Hanyag, Rossz";
-    }
-    else {
+    } else {
         return "Ilyen jegy NINCS!";
     }
 }
@@ -35,6 +29,23 @@ function HarommalOszthatoSzamok(vizsgaltTomb: number[]): number {
     let szamok: number = 0;
     for (let i = 0; i < vizsgaltTomb.length; i++) {
         if (vizsgaltTomb[i] % 3 == 0) {
-            szamok++;        }    }
-    return szamok;    }
-document.write("<br> Hárommal osztható számok mennyisége:" + HarommalOszthatoSzamok([3,9,12,4,5]));
+            szamok++;
+        }
+    }
+    return szamok;
+}
+document.write(
+    "<br> Hárommal osztható számok mennyisége:" +
+        HarommalOszthatoSzamok([3, 9, 12, 4, 5])
+);
+
+function nyeroSzamok(darab: number, min: number, max: number): number[] {
+    let szamTomb: number[] = [];
+    for (let i = 0; i < darab; i++) {
+        let Szam: number = Math.round(Math.random() * (max - min) + min);
+        szamTomb.push(Szam);
+    }
+    return szamTomb;
+}
+var vizsgaltTomb = nyeroSzamok(3,1,10);
+document.write("<br>A nyerő számok:" + vizsgaltTomb);
