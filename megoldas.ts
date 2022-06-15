@@ -50,7 +50,7 @@
                 }
             }
             if (egyezik == false) {
-                szamTomb.push(Szam[i]);
+                szamTomb.push(Szam);
             }
         }
         return szamTomb;
