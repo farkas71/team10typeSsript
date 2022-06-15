@@ -55,5 +55,5 @@ function nyeroSzamok(darab, min, max) {
     }
     return szamTomb;
 }
-var vizsgaltTomb = nyeroSzamok(5, 1, 90);
+var vizsgaltTomb = nyeroSzamok(5, 1, 10);
 document.write("<br>A nyerő számok:" + vizsgaltTomb);
