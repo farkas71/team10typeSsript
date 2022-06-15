@@ -41,11 +41,11 @@
 
     function nyeroSzamok(darab: number, min: number, max: number): number[] {
         let szamTomb: number[] = [];
-        for (let i = 0; i < darab; i++) {
+        for (let i = 0; i <= darab; i++) {
             let Szam: number = Math.round(Math.random() * (max - min) + min);
             let egyezik: boolean = false;
             for (let j = 0; j < szamTomb.length; j++) {
-                if (darab[i] == szamTomb[j]) {
+                if (Szam == szamTomb[j]) {
                     egyezik = true;
                 }
             }
